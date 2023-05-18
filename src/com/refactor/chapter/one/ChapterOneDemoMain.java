@@ -36,15 +36,15 @@ public class ChapterOneDemoMain {
         Invoice invoice = new Invoice();
         invoice.setCustomer("Bigco");
 
-        Performance performance = Performance.buildPerformance("HAMLET",55);
+        Performance hamlet = Performance.buildPerformance("HAMLET",55);
 
-        Performance performance1 = Performance.buildPerformance("ASISLIKE",35);
+        Performance asIsLike = Performance.buildPerformance("ASISLIKE",35);
 
-        Performance performance2 = Performance.buildPerformance("OTHELLO",40);
+        Performance othello = Performance.buildPerformance("OTHELLO",40);
         List<Performance> performanceList = new ArrayList<>();
-        performanceList.add(performance);
-        performanceList.add(performance1);
-        performanceList.add(performance2);
+        performanceList.add(hamlet);
+        performanceList.add(asIsLike);
+        performanceList.add(othello);
         invoice.setPerformanceList(performanceList);
         return invoice;
     }
